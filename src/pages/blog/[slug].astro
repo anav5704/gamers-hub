@@ -1,0 +1,38 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content"
+import Container from "../../components/Container.astro"
+import Hero from "../../components/Hero.astro"
+import Layout from "../../layouts/Layout.astro"
+
+export const getStaticPaths = async () => {
+    const blogs = await getCollection("blog")
+
+    const paths = blogs.map((blog) => {
+        return {
+            params: {
+                slug:  blog.slug
+            },
+            props: {
+                blog
+            }
+        }
+    })
+
+    return paths
+}
+
+type Props = {
+    blog: CollectionEntry<"blog">
+}
+
+const { blog } = Astro.props
+---
+
+<Layout title={blog.data.title}>
+]    <Container>
+        {blog.data.title}
+        <div class="prose prose-2xl">
+            {blog.data.data}
+        </div>
+    </Container>    
+</Layout>
