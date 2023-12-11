@@ -1,9 +1,8 @@
 ---
 author: dwight-schrute
-categories: ["studio tips"]
 date: 08/10/2021
 featured: false
-image: /images/photoshoot.jpg
+image: ./images/game.jpg
 title: TWO Behind-the-scenes with our artists
 ---
 
