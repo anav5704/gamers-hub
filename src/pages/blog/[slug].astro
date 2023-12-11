@@ -26,13 +26,14 @@ type Props = {
 }
 
 const { blog } = Astro.props
+const { Content } = await blog.render()
 ---
 
 <Layout title={blog.data.title}>
-]    <Container>
+]    <Container>``
         {blog.data.title}
         <div class="prose prose-2xl">
-            {blog.data.data}
+            <Content />
         </div>
     </Container>    
 </Layout>

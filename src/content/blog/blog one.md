@@ -1,7 +1,7 @@
 ---
 author: dwight-schrute
 date: 08/10/2021
-featured: false
+featured: true 
 image: ./images/game.jpg
 title: ONE Behind-the-scenes with our artists
 ---

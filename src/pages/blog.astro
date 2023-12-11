@@ -2,15 +2,14 @@
 import { getCollection } from "astro:content"
 import Container from "../components/Container.astro";
 import Layout from "../layouts/Layout.astro";
+import BlogCard from "../components/BlogCard.astro";
 const blogs = await getCollection("blog")
 ---
 
 <Layout title="Gamer Hub | Blogs">
     <Container>
         {blogs.map((blog) => (
-            <a href={`/blog/${blog.slug}`}>
-                {blog.data.title}
-            </a>
+            <BlogCard blog={blog} />
         ))}
     </Container>
 </Layout>

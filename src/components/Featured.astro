@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import BlogCard from "./BlogCard.astro";
+import Header from "./Header.astro";
+const blogs = await getCollection("blog")
+const featuredBlogs = blogs.filter((blog) => blog.data.featured === true)
+---
+
+<Header content="Featured blogs" />
+<main class="grid grid-cols-3 gap-14 mt-20">
+    {featuredBlogs.map((blog) => (
+        <BlogCard blog={blog} />
+    ))}
+</main>

@@ -2,6 +2,7 @@
 import { ViewTransitions } from "astro:transitions";
 import Navbar from "../components/Navbar.astro"
 import "../styles/main.css"
+import Footer from "../components/Footer.astro";
 interface Props {
 	title?: string;
     description?: string; 
@@ -26,6 +27,7 @@ const { title="Gamers Hub", description="News on current games.", image="/fav.pn
 	<body class="m-h-screen">
         <Navbar />
 		<slot />
+        <Footer />
 	</body>
 </html>
 
