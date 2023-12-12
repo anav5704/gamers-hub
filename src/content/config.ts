@@ -8,7 +8,8 @@ const blogCollection = defineCollection({
             author: z.string(),
             date: z.string().transform(str => format(new Date(str), "MMMM d, yyyy")),
             featured: z.boolean().default(false),
-            image: image(),
+            image1: image(),
+            image2: image(),
             title: z.string(),
     })
 })

@@ -28,23 +28,23 @@ h1 {
 }
 
 .glow1 {
-    filter: drop-shadow(0px 0px 50px rgba(85, 0, 255, .5));
+    filter: drop-shadow(0px 0px 75px rgba(85, 0, 255, 1));
 }
 
 .glow2 {
-    filter: drop-shadow(0px 0px 50px rgba(255, 0, 157, .5));
+    filter: drop-shadow(0px 0px 75px rgba(255, 0, 157, 1));
 }
 
 .glow3 {
-    filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, .5));
+    filter: drop-shadow(0px 0px 75px rgba(255, 255, 255, 1));
 }
 
 .glow4 {
-    filter: drop-shadow(0px 0px 50px rgba(255, 0, 89, .5));
+    filter: drop-shadow(0px 0px 75px rgba(255, 0, 89, 1));
 }
 
 .glow5 {
-    filter: drop-shadow(0px 0px 50px rgba(195, 0, 255, .5));
+    filter: drop-shadow(0px 0px 75px rgba(195, 0, 255, 1));
 }
 
 .polka {
