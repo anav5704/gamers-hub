@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 ---
 <nav class="overflow-hidden glass z-50 w-screen fixed top-0 flex items-center justify-between h-[10vh] text-white px-24">
     <a href="/" class="flex items-center gap-x-5">
-        <Image class=" " src="/fav.png" alt="image" height={45} width={45} />
+        <Image class=" " src="/public/fav.png" alt="image" height={45} width={45} />
         <h1 class="text-lg font-medium">Gamers Hub</h1>
     </a>
     <ul class="flex items-start gap-x-7">
