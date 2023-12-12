@@ -2,13 +2,13 @@
 import { Image } from "astro:assets";
 ---
 <nav class="overflow-hidden glass z-50 w-screen fixed top-0 flex items-center justify-between h-[10vh] text-white px-24">
-    <div class="flex items-center gap-x-5">
+    <a href="/" class="flex items-center gap-x-5">
         <Image class=" " src="/public/fav.png" alt="image" height={45} width={45} />
         <h1 class="text-lg font-medium">Gamers Hub</h1>
-    </div>
+    </a>
     <ul class="flex items-start gap-x-7">
-        <li>Home</li>
-        <li>Blogs</li>
-        <li>About</li>
+        <a class="hover:underline" href="/"><li>Home</li></a>
+        <a class="hover:underline" href="/blog"><li>Blogs</li></a>
+        <a class="hover:underline" href="/"><li>About</li></a>
     </ul>
 </nav>
