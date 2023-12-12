@@ -9,9 +9,9 @@ const blogs = await getCollection("blog")
 
 <Layout title="Gamer Hub | Blogs">
     <Container>
-        <div class="pt-[15vh] mt-[10vh]"/>
+        <div class="pt-[10vh] md:pt-[15vh] mt-[10vh]"/>
         <Header content="all blogs" />
-        <main class="grid grid-cols-3 gap-14 mt-20">
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-14 mb-20 mt-20">
             {blogs.map((blog) => (
                 <BlogCard blog={blog} />
             ))}

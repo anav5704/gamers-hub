@@ -31,7 +31,7 @@ const { Content } = await blog.render()
 
 <Layout title={blog.data.title}>
     <div class="mt-[10vh] pt-[5vh]">
-        <div class="flex flex-col h-[85vh] justify-evenly w-3/4 mx-auto items-center">
+        <div class="flex flex-col h-[85vh] gap-y-10 justify-center md:justify-evenly w-4/5 md:w-3/4 mx-auto items-center">
             <div class="relative w-fit bg-[#100F10] rounded-xl shadow p-3">
                 <Image quality={100} format={"png"} class="absolute bottom-3 translate-x-1/2 right-1/2" src={blog.data.image2} height={270} width={270} alt={""} />
                 <Image class="rounded-lg overflow-hiddenobject-cover" src={blog.data.image1} width={500} height={200} alt={blog.data.title} />
@@ -39,7 +39,7 @@ const { Content } = await blog.render()
             <Header content={blog.data.title} />
         </div>
         </div>
-        <div class="content w-3/4 mx-auto">
+        <div class="content w-3/4 mx-auto mb-20">
             <Content />
         </div>
 </Layout>

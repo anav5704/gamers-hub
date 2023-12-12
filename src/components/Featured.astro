@@ -7,8 +7,9 @@ const featuredBlogs = blogs.filter((blog) => blog.data.featured === true)
 ---
 
 <Header content="Featured blogs" />
-<main class="grid grid-cols-3 gap-14 mt-20">
+<main class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-14 mb-5 md:mb-20 mt-20">
     {featuredBlogs.map((blog) => (
         <BlogCard blog={blog} />
     ))}
+<a href="/blog" class="block md:hidden underline col-span-1 text-center mb-5">All blogs</a>
 </main>
