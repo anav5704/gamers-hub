@@ -15,6 +15,7 @@
 
 h1 {
     font-family: 'Bungee', sans-serif;
+    color: white;
 }
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
