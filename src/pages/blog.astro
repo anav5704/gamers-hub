@@ -3,13 +3,18 @@ import { getCollection } from "astro:content"
 import Container from "../components/Container.astro";
 import Layout from "../layouts/Layout.astro";
 import BlogCard from "../components/BlogCard.astro";
+import Header from "../components/Header.astro";
 const blogs = await getCollection("blog")
 ---
 
 <Layout title="Gamer Hub | Blogs">
     <Container>
-        {blogs.map((blog) => (
-            <BlogCard blog={blog} />
-        ))}
-    </Container>
+        <div class="pt-[15vh] mt-[10vh]"/>
+        <Header content="all blogs" />
+        <main class="grid grid-cols-3 gap-14 mt-20">
+            {blogs.map((blog) => (
+                <BlogCard blog={blog} />
+            ))}
+        </Container>
+    </main>
 </Layout>

@@ -54,15 +54,3 @@ h1 {
     background-size: 24px 24px;
         position: relative;
 }
-
-.polka::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    width: 100vw;
-    z-index: 99;
-    background: linear-gradient( 0deg, #000000 10%, #00000000 100%);
-    
-}
