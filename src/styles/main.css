@@ -5,7 +5,7 @@
 
 @layer base {
     .content p {
-        @apply text-xl
+        @apply text-lg
     }
 
     .content h2 {
