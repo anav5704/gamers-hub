@@ -3,6 +3,16 @@
 @tailwind utilities;
 @tailwind base;
 
+@layer base {
+    .content p {
+        @apply text-xl
+    }
+
+    .content h2 {
+        @apply font-extrabold text-3xl mt-10 mb-2 tracking-wide 
+    }
+}
+
 * {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
