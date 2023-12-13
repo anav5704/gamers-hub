@@ -11,14 +11,14 @@ const { blog } = Astro.props;
 
 <div class="grid-col-1 bg-[#100F10] rounded-xl shadow border-zinc-950 hover:border-white transition border group">
     <div class="px-3 pt-3 mb-3 relative">
-        <Image loading={"lazy"} quality={100} format={"png"} class="z-20 absolute bottom-0 -right-6" src={blog.data.image2} height={180} width={180} alt={""} />
-        <Image loading={"lazy"} class="z-10 rounded-lg overflow-hidden mb-3 object-cover" src={blog.data.image1} width={500} height={200} alt={blog.data.title} />
+        <Image loading={"lazy"} format="avif" quality={80} class="z-20 absolute bottom-0 -right-6" src={blog.data.image2} height={180} width={180} alt={""} />
+        <Image loading={"lazy"} format="avif" quality={50} class="z-10 rounded-lg overflow-hidden mb-3 object-cover" src={blog.data.image1} width={500} height={200} alt={blog.data.title} />
     </div>
     <div class="flex flex-col justify-between h-fit gap-y-2">
-        <h3 class="font-semibold px-3 text-lg line-clamp-1">{blog.data.title}</h3>
-        <p class="line-clamp-2 px-3  text-zinc-500">{blog.body}</p>
+        <h2 class="font-semibold px-3 text-lg line-clamp-1">{blog.data.title}</h2>
+        <p class="line-clamp-2 px-3  text-zinc-300">{blog.body}</p>
         <a class="ml-auto" href={`/blog/${blog.slug}`}>
-            <button class="py-2 px-5 mt-2 transition rounded-tl-xl rounded-br-xl group-hover:bg-white group-hover:text-black">Read more</button>
+            <button class="py-2 px-5 mt-2 transition rounded-tl-xl rounded-br-xl group-hover:bg-white group-hover:text-black">Continue reading</button>
         </a>
     </div>
 </div>

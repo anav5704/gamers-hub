@@ -9,7 +9,7 @@ interface Props {
     image?: string;
 }
 
-const { title="Gamers Hub", description="News on current games.", image="/fav.png" } = Astro.props;
+const { title="Gamers Hub", description="News on current games.", image="/src/images/fav.png" } = Astro.props;
 ---
  
 <!doctype html>
@@ -18,7 +18,7 @@ const { title="Gamers Hub", description="News on current games.", image="/fav.pn
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/fav.png" />
+		<link rel="icon" type="image/svg+xml" href="/src/images/fav.png" />
         <meta property="og:imgae" content={image} >
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
