@@ -2,9 +2,9 @@
 author: dwight-schrute
 date: 08/10/2021
 featured: true 
-image1: ./images/genshin1.jpg
-image2: ./images/genshin2.png
-title: "Xiaomi Band 8 Pro Genshin Impact special edition launches in China!"
+image1: ./images/tf1.jpg
+image2: ./images/tf2.png
+title: "Transformers: Reactivate Delayed to 2024 For New Technology!"
 ---
 
 Collaboration is a key component of many creative endeavors, and music production is no exception. In fact, collaboration can be essential to the success of a music project, as it allows for the pooling of diverse talents and perspectives to create something truly unique and compelling.
