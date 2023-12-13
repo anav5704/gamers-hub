@@ -1,17 +1,29 @@
 ---
 import Header from "./Header.astro";
-const rand = Math.floor(Math.random() * 5) + 1;
+import { Image } from "astro:assets";
+
+import unreal from "../images/unreal.webp"
+import champ from "../images/rs6.png"
+import radiant from "../images/radiant.webp"
+import pred from "../images/pred.webp"
+import ultChamp from "../images/uc.png"
 ---
 
 <main class="h-[90vh] mt-[10vh] flex flex-col justify-center gap-y-10 md:gap-y-0 md:justify-evenly items-center text-white">
     <div class="flex flex-col gap-y-10 text-center w-5/6">
         <Header content="News. for gamers, by gamers." />
-        <p class="font-semibold text-lg"> Level up your gaming experience with breaking news, exclusive insights, and all things gaming. Game on!</p>
+        <p class="font-semibold text-lg md:text-2xl"> Level up your gaming experience with breaking news, <br class="hidden md:block"> exclusive insights, and all things gaming. Game on!</p>
     </div>
-    <div class="flex md:flex-row flex-col items-center gap-x-28">
-        <img class={`${rand == 1 ? "block" : "hidden"} md:block glow1 anim1 h-40 z-10`} src="/images/unreal.webp" alt="" />
-        <img class={`${rand == 2 ? "block" : "hidden"} md:block glow2 h-40 z-0 `} src="/images/rs6.png" alt="" />
-        <img class={`${rand == 3 ? "block" : "hidden"} md:block glow3 h-40 z-20`} src="/images/radiant.webp" alt="" />
-        <img class={`${rand == 4 ? "block" : "hidden"} md:block glow4 h-40 z-30`} src="/images/pred.webp" alt="" />
-        <img class={`${rand == 5 ? "block" : "hidden"} md:block glow5 h-36 z-00`} src="/images/uc.png" alt="" />
+    <div class="flex md:flex-row flex-col items-center gap-x-24">
+        <Image format="png" quality={50} alt="rank icon" height={100} width={160} class="object-cover rankIcon hidden md:block glow1 z-10" src={unreal} alt="" />
+        <Image format="png" quality={50} alt="rank icon" height={100} width={160} class="object-cover rankIcon hidden md:block glow2 z-0 " src={champ} alt="" />
+        <Image format="png" quality={50} alt="rank icon" height={100} width={160} class="object-cover rankIcon hidden md:block glow3 z-20" src={radiant} alt="" />
+        <Image format="png" quality={50} alt="rank icon" height={100} width={160} class="object-cover rankIcon hidden md:block glow4 z-30 scale-90" src={pred} alt="" />
+        <Image format="png" quality={50} alt="rank icon" height={100} width={160} class="object-cover rankIcon hidden md:block glow5 z-00 scale-90" src={ultChamp} alt="" />
     </div>
+    
+    <script is:inline>
+        const rand = Math.floor(Math.random() * 5)
+        const rankIcons = document.querySelectorAll(".rankIcon")
+        rankIcons[rand].style.display = 'block'
+    </script>
