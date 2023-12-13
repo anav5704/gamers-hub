@@ -1,4 +1,4 @@
-# Gamers Hub - A Blog Website
+# Gamers Hub - A Blog Website 🎮
 
 ![hero page](https://github.com/anav5704/gamers-hub/blob/main/docs/hero.png)
 
