@@ -2,7 +2,7 @@
 
 ![hero page](https://github.com/anav5704/gamers-hub/blob/main/docs/gamers-hub.png)
 
-This is a blog website for gamers which features latest news articles on various games. It is a simple site having just the main page and individual blog pages. Images may look pixelated due to Astros build in image compressing, which is not too bad as blog sites deal with large amounts of images at scale. Astro view transitions also allow for fade transitions between pages for a smooth exprience.
+This is a blog website for gamers that features the latest news articles on various games. It is a simple site having just the main page and individual blog pages. Images may look pixelated due to Astros built-in image compressing, which is not too bad as blog sites deal with large amounts of images at scale. Astro view transitions also allow for fade transitions between pages for a smooth experience.
 
 ## Technologies Used
 
@@ -11,7 +11,7 @@ This is a blog website for gamers which features latest news articles on various
 
 ## Getting Started
 
-First fork and clone the repo. Then, run ```npm install``` to download all the dependencies. Once that is done, run``` npm run dev``` to view it on localhost.
+First fork and clone the repo. Then, run ```npm install``` to download all the dependencies. Once that is done, run ```npm run dev``` to view it on localhost.
 
 ## Learning Resources
 
